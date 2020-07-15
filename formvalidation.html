@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Form</title>
+    </head>
+
+    <body>
+        <form id="form" action="/" method="GET">
+            <div id="error"></div>
+            <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="text">
+            </div>
+            <div>
+                <button type="cancel">Cancel</button>
+            </div>
+        </form>
+        <script>
+            const name = document.getElementById('name')
+            const password = document.getElementById('password')
+            const form = document.getElementById('form')
+            const errorElement = document.getElementById('error')
+
+
+            form.addEventListener('submit', (e) => {
+                
+                let errorMessages = []
+                errorMessages.j
+                if (name.value === '' || name.value == null) {
+                    errorMessages.push('Name is required')
+                }
+                if (password.value === 'password') {
+                    errorMessages.push('Password cannot be insecure')
+                }
+                if (errorMessages.length > 0) {
+                    console.log(errorElement.innerText)
+                    errorElement.innerText = errorMessages.join('!')
+                    console.log(errorElement.innerText)
+                }
+                e.preventDefault()
+            }) 
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            body {
+                background-color: rgba(57, 233, 22, 0.39);
+            }
+
+            h1.titel {
+                color: rgb(0, 139, 42);
+                font-size: 130px;
+                margin-bottom: 76px;
+                text-align: center;
+            }
+
+            div {
+                color: rgb(130, 61, 139);
+                font-size: 85px;
+                text-decoration: none;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: normal;
+                text-align: center;
+            }
+
+            div.distance {
+                padding: 100px;
+                text-align: center;
+            }
+
+            div.distance img {
+                width: 100%; 
+
+
+            p.ownership {
+                color: rgb(88, 61, 139);
+                text-decoration: underline;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: xx-large;
+                text-align: center;
+            }
+
+        </style>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+    </head>
+
+    <body>
+
+        <h1 id="title" class="titel"> DREAM HOUSE</h1>
+        <div id="price" class="price">Price:999 000 EUR</div>
+        <div id="Location">Location:Germany</div>
+        <div id="myvalue"> myvalue:Neckar-Odenwald Krise</div>
+        <div id="Stadtteil">Stadtteil:Feudenheim</div>
+
+        <div class="distance">
+            <img class="myImg" src="https://tinyurl.com/ybcdvgmk" />
+        </div>
+
+        <p class="ownership">
+            client: Tatiana Lutz
+
+        </p>
+
+        <script>
+            function changeHtml(id, message) {
+                const workingElement = document.getElementById(id)
+                workingElement.textContent = message
+                workingElement.style.color = "dark green";
+            }
+            changeHtml('title', 'Hello World')
+            changeHtml('price', '500 000')
+            changeHtml('Location', 'Italy')
+            changeHtml('myvalue', 'Lombardia')
+            changeHtml('Stadtteil', 'Frutti di Marmi')
+            
+
+        </script>
+    </body>
+
+</html>
