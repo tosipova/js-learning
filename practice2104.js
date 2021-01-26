@@ -9,16 +9,16 @@ function myaddress(city, streetname, number, citySize) {
     return `The address is ${city}, ${streetname} ${number}, isSmallcity: ${isSmallcity}`
     //return 'my adress is ' + city + ',' + streetname + ',' + number + ',' + 'isSmallcity:' + isSmallcity;
 }
-console.log(myaddress('Mannheim', 'Seckenheimerstr.', 77, 300000));
+console.log(myaddress('Berlin', 'KeiserStrasse.', 128, 300000));
 
 // 2.
 
 const addressFirst = {
-    country: 'Germany', streetname: 'Seckenheimerstr', mynumber: 77, saycountry: function () { return this.country + ' ' + this.streetname + '  ' + this.mynumber }
+    country: 'Germany', streetname: 'Keiserstrasse', mynumber: 128, saycountry: function () { return this.country + ' ' + this.streetname + '  ' + this.mynumber }
 }
 
 const addressSecond = {
-    country: 'Russia', streetname: 'Moscowskayastr', mynumber: 211, saycountry: function () { return this.country + '    ' + this.streetname + '  ' + this.mynumber }
+    country: 'Russia', streetname: 'Lermonovskaya', mynumber: 21, saycountry: function () { return this.country + '    ' + this.streetname + '  ' + this.mynumber }
 }
 
 console.log(addressFirst)
