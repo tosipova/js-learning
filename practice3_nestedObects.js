@@ -6,7 +6,7 @@ const human = { name: 'bb', car: { brand: 'BMW' } }
 const denis = {
     name: 'Denis',
     car: { brand: 'audi' },
-    address: { street: 'Secken', number: 77, city: 'Mann' },
+    address: { street: 'White', number: 707, city: 'Paris' },
     introduce: function () {
         return `My car is ${this.car.brand} and my address is ${this.address.street},${this.address.number},${this.address.city} .`
     }
@@ -16,7 +16,7 @@ console.log(denis.introduce())
 const tanya = {
     name: 'Tanya',
     car: { brand: 'BMW' },
-    address: { street: 'Secken', number: 77, city: 'Mann' },
+    address: { street: 'White', number: 707, city: 'Paris' },
     introduce: function () {
         return `My car is ${this.car.brand} and my address is ${this.address.street},${this.address.number},${this.address.city}`
     }
